@@ -6,7 +6,7 @@ def pin_to_ipfs(data):
 	#YOUR CODE HERE
 	json_data=json.dumps(data)
 	files={
-		'file':('data.json',json.data,'application/json')
+		'file':('data.json',json_data,'application/json')
 	}
 
 	gateway="https://api.pinata.cloud/pinning/pinFileToIPFS"
