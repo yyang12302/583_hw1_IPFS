@@ -32,7 +32,7 @@ def get_from_ipfs(cid,content_type="json"):
 	}
 	response = requests.get(gateway, headers=headers)
 	print(response.json())
-	if content_type ="json":
+	if content_type =="json":
 		data = response.json()
 	else:
 		data = response.content
