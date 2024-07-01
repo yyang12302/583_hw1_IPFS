@@ -15,7 +15,7 @@ def pin_to_ipfs(data):
 		'pinata_secret_api_key':'d935f96f288a65d6fd2b5984af63efa47d6022cc03cba8aeebefd65a330fa9a6'
 
 	}
-	response = reguests.post(gateway, files=files, headers=headers)
+	response = requests.post(gateway, files=files, headers=headers)
 	cid = response.json()['IpfsHash']
 
 
