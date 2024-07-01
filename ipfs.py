@@ -21,7 +21,7 @@ def pin_to_ipfs(data):
 
 	return cid
 
-def get_from_ipfs(cid,content_type="json"):
+def get_from_ipfs(cid,content_type=="json"):
 	assert isinstance(cid,str), f"get_from_ipfs accepts a cid in the form of a string"
 	#YOUR CODE HERE	
 	gateway="https://api.pinata.cloud/pinning/pinFileToIPFS"
